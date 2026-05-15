@@ -17,12 +17,24 @@
     .date { color: #888; font-size: 14px; margin-bottom: 32px; }
     a { color: #4A90D9; }
     .lang { text-align: right; margin-bottom: 16px; font-size: 14px; }
+    .lang-select { appearance: none; -webkit-appearance: none; background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px; padding: 8px 32px 8px 12px; font-size: 13px; font-family: inherit; color: #555; cursor: pointer; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%23999' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>"); background-repeat: no-repeat; background-position: right 12px center; }
+    .lang-select:hover { border-color: #ccc; }
   </style>
 </head>
 <body>
 
 <div class="lang">
-  <a href="terms-of-service.html">KO</a> | <a href="terms-of-service-en.html">EN</a> | <strong>JA</strong> | <a href="terms-of-service-zh-Hans.html">简中</a> | <a href="terms-of-service-zh-Hant.html">繁中</a> | <a href="terms-of-service-es.html">ES</a> | <a href="terms-of-service-fr.html">FR</a> | <a href="terms-of-service-de.html">DE</a> | <a href="terms-of-service-pt-BR.html">PT</a>
+  <select class="lang-select" onchange="if(this.value)location.href=this.value">
+    <option value="terms-of-service.html">Korean</option>
+    <option value="terms-of-service-en.html">English</option>
+    <option value="terms-of-service-ja.html" selected>Japanese</option>
+    <option value="terms-of-service-zh-Hans.html">Chinese (Simplified)</option>
+    <option value="terms-of-service-zh-Hant.html">Chinese (Traditional)</option>
+    <option value="terms-of-service-es.html">Spanish</option>
+    <option value="terms-of-service-fr.html">French</option>
+    <option value="terms-of-service-de.html">German</option>
+    <option value="terms-of-service-pt-BR.html">Portuguese (Brazil)</option>
+  </select>
 </div>
 
 <h1>利用規約</h1>
